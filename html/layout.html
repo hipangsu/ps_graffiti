@@ -40,11 +40,13 @@
                 </div>
             </header>
 
-            <main class="base-body">
-                <div class="main-banner" style="display:none;">
-                    <img src="../resources/img/background/bg_main_02.jpg" alt="">
+            <div class="base-body">
+                <div class="main-banner">
+                    <img src="../resources/img/background/bg_banner_02.jpg" alt="">
                 </div>
                 <div class="body-wrap">
+
+                    <!-- 사이드메뉴 -->
                     <aside class="aside-wrap">
 
                         <!-- 내 신상 정보 -->
@@ -52,32 +54,43 @@
                             <div class="photo">
                                 <img src="../resources/img/icons/ico_etc_myInfo01.png" alt="">
                             </div>
-                            <ul class="info">
-                                <li>ko gwangsu</li>
-                                <li>hipangsu@gmail.com</li>
-                                <li>010-9582-0728</li>
-                            </ul>
                             <ul class="sns">
                                 <li><a href="https://www.instagram.com/" target="blank" class="instagram"><span class="hidden">instagram</span></a></li>
                                 <li><a href="https://github.com/" target="blank" class="github"><span class="hidden">github</span></a></li>
                                 <li><a href="https://twitter.com/?lang=ko" target="blank" class="twitter"><span class="hidden">twitter</span></a></li>
                                 <li><a href="https://www.facebook.com/" target="blank" class="facebook"><span class="hidden">facebook</span></a></li>
                             </ul>
+                            <dl class="info">
+                                <div>
+                                    <dt>name.</dt>
+                                    <dd>ko gwangsu</dd>
+                                </div>
+                                <div>
+                                    <dt>tel.</dt>
+                                    <dd>010-9582-0728</dd>
+                                </div>
+                                <div>
+                                    <dt>email.</dt>
+                                    <dd>hipangsu@gmail.com</dd>
+                                </div>
+                            </dl>
                         </div>
 
                         <!-- 최신글&인기글 -->
                         <div class="aside-cont tab-box">
                             <ul class="tab-header">
-                                <li class="tab-link act" data-tab="tab-1">최신 글</li>
-                                <li class="tab-link" data-tab="tab-1">인기 글</li>
+                                <li class="tab-link act" data-tab="tab-1"><button type="button" class="tab-btn"><span>최신 글</span></button></li>
+                                <li class="tab-link" data-tab="tab-2"><button type="button" class="tab-btn"><span>인기 글</span></button></li>
                             </ul>
 
+                            <!-- tab-1 -->
                             <div id="tab-1" class="tab-cont act">
+                                <h3 class="hidden">최신 글</h3>
                                 <ol class="tab-list">
                                     <li>
                                         <a href="#">
-                                            <div class="rank-list">
-                                                <strong class="tit">main title text main title text main title text</strong>
+                                            <div class="rank-item">
+                                                <strong class="tit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</strong>
                                                 <div class="tag">
                                                     <span>#바다</span>
                                                     <span>#섬</span>
@@ -88,8 +101,8 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <div class="rank-list">
-                                                <strong class="tit">main title text</strong>
+                                            <div class="rank-item">
+                                                <strong class="tit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</strong>
                                                 <div class="tag">
                                                     <span>#바다</span>
                                                     <span>#섬</span>
@@ -100,8 +113,8 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <div class="rank-list">
-                                                <strong class="tit">main title text</strong>
+                                            <div class="rank-item">
+                                                <strong class="tit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</strong>
                                                 <div class="tag">
                                                     <span>#바다</span>
                                                     <span>#섬</span>
@@ -112,8 +125,8 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <div class="rank-list">
-                                                <strong class="tit">main title text</strong>
+                                            <div class="rank-item">
+                                                <strong class="tit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</strong>
                                                 <div class="tag">
                                                     <span>#바다</span>
                                                     <span>#섬</span>
@@ -124,8 +137,8 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <div class="rank-list">
-                                                <strong class="tit">main title text</strong>
+                                            <div class="rank-item">
+                                                <strong class="tit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</strong>
                                                 <div class="tag">
                                                     <span>#바다</span>
                                                     <span>#섬</span>
@@ -137,37 +150,296 @@
                                 </ol>
                             </div>
 
+                            <!-- tab-2 -->
                             <div id="tab-2" class="tab-cont" style="display:none">
-                                인기 글
-                                <ol class="">
-                                    <li><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
+                                <h3 class="hidden">인기 글</h3>
+                                <ol class="tab-list">
+                                    <li>
+                                        <a href="#">
+                                            <div class="rank-item">
+                                                <strong class="tit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</strong>
+                                                <div class="tag">
+                                                    <span>#바다</span>
+                                                    <span>#섬</span>
+                                                    <span>#휴양지</span> 
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="rank-item">
+                                                <strong class="tit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</strong>
+                                                <div class="tag">
+                                                    <span>#바다</span>
+                                                    <span>#섬</span>
+                                                    <span>#휴양지</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="rank-item">
+                                                <strong class="tit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</strong>
+                                                <div class="tag">
+                                                    <span>#바다</span>
+                                                    <span>#섬</span>
+                                                    <span>#휴양지</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="rank-item">
+                                                <strong class="tit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</strong>
+                                                <div class="tag">
+                                                    <span>#바다</span>
+                                                    <span>#섬</span>
+                                                    <span>#휴양지</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="rank-item">
+                                                <strong class="tit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</strong>
+                                                <div class="tag">
+                                                    <span>#바다</span>
+                                                    <span>#섬</span>
+                                                    <span>#휴양지</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
                                 </ol>
                             </div>
                         </div>
 
                         <!-- 아코디언메뉴 -->
                         <div class="aside-cont menu-acco">
-                            <ul class="">
-                                <li>
-                                    <strong>여행 정보</strong>
-                                </li>
-                                <li>공부방</li>
-                                <li>먹거리 정보</li>
-                            </ul>
+
+                            <section class="menu-wrap">
+                                <div class="menu-tit">
+                                    <h2>여행 정보</h2>
+                                </div>
+                                <div class="menu-cont">
+                                    <ul class="menu-item">
+                                        <li class="menu-list close">
+                                            <h3><button class="menu-btn"><span>국내여행</span></button></h3>
+                                            <ul class="menu-item dep2">
+                                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</a></li>
+                                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</a></li>
+                                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-list">
+                                            <h3><button class="menu-btn"><span>해외여행</span></button></h3>
+                                            <ul class="menu-item dep2">
+                                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</a></li>
+                                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</a></li>
+                                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                            <section class="menu-wrap">
+                                <div class="menu-tit">
+                                    <h2>공부방</h2>
+                                </div>
+                                <div class="menu-cont">
+                                    <ul class="menu-item">
+                                        <li class="menu-list close">
+                                            <h3><button class="menu-btn"><span>HTML</span></button></h3>
+                                            <ul class="menu-item dep2">
+                                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</a></li>
+                                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</a></li>
+                                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-list">
+                                            <h3><button class="menu-btn"><span>CSS</span></button></h3>
+                                            <ul class="menu-item dep2">
+                                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</a></li>
+                                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</a></li>
+                                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-list">
+                                            <h3><button class="menu-btn"><span>JAVASCRIPT</span></button></h3>
+                                            <ul class="menu-item dep2">
+                                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</a></li>
+                                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</a></li>
+                                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                            <section class="menu-wrap">
+                                <div class="menu-tit">
+                                    <h2>먹거리 정보</h2>
+                                </div>
+                                <div class="menu-cont">
+                                    <ul class="menu-item">
+                                        <li class="menu-list close">
+                                            <h3><button class="menu-btn"><span>맛집 리스트</span></button></h3>
+                                            <ul class="menu-item dep2">
+                                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</a></li>
+                                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</a></li>
+                                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-list">
+                                            <h3><button class="menu-btn"><span>레시피</span></button></h3>
+                                            <ul class="menu-item dep2">
+                                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</a></li>
+                                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</a></li>
+                                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ex.</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                            
                         </div>
 
                     </aside>
-                    <div class="main-wrap">
-                        <section class="main-cont">
-                            main
+
+                    <!-- 메인컨텐츠 -->
+                    <main class="base-main">
+
+                        <section class="main-wrap type-1">
+                            <div class="main-tit">
+                                <h2>여행 정보</h2>
+                            </div>
+
+                            <div class="main-pnl">
+                                <div class="main-img">
+                                    <img src="../resources/img/background/bg_main_01.jpg" alt="">
+                                </div>
+                                <div class="main-txt">
+                                    <h3 class="">Lorem ipsum dolor</h3>
+                                    <p class="">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                        Quia veniam animi dicta ducimus neque consectetur et nisi 
+                                        doloremque iste vero quis ab voluptatem laudantium illum 
+                                        repudiandae minus tempora dolore culpa sit perferendis unde, 
+                                        eveniet repellendus! Distinctio, hic expedita, provident commodi, 
+                                        doloribus possimus aut unde repellat iste velit minima est nobis.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                        Quia veniam animi dicta ducimus neque consectetur et nisi 
+                                        doloremque iste vero quis ab voluptatem laudantium illum 
+                                        repudiandae minus tempora dolore culpa sit perferendis unde, 
+                                        eveniet repellendus! Distinctio, hic expedita, provident commodi, 
+                                        doloribus possimus aut unde repellat iste velit minima est nobis.
+                                    </p>
+                                    <div class="tag">
+                                        <span>#바다</span>
+                                        <span>#섬</span>
+                                        <span>#휴양지</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-pnl">
+                                <div class="main-img">
+                                    <img src="../resources/img/background/bg_main_01.jpg" alt="">
+                                </div>
+                                <div class="main-txt">
+                                    <h3 class="">Lorem ipsum dolor</h3>
+                                    <p class="">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                        Quia veniam animi dicta ducimus neque consectetur et nisi 
+                                        doloremque iste vero quis ab voluptatem laudantium illum 
+                                        repudiandae minus tempora dolore culpa sit perferendis unde, 
+                                        eveniet repellendus! Distinctio, hic expedita, provident commodi, 
+                                        doloribus possimus aut unde repellat iste velit minima est nobis.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                        Quia veniam animi dicta ducimus neque consectetur et nisi 
+                                        doloremque iste vero quis ab voluptatem laudantium illum 
+                                        repudiandae minus tempora dolore culpa sit perferendis unde, 
+                                        eveniet repellendus! Distinctio, hic expedita, provident commodi, 
+                                        doloribus possimus aut unde repellat iste velit minima est nobis.
+                                    </p>
+                                    <div class="tag">
+                                        <span>#바다</span>
+                                        <span>#섬</span>
+                                        <span>#휴양지</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-pnl">
+                                <div class="main-img">
+                                    <img src="../resources/img/background/bg_main_01.jpg" alt="">
+                                </div>
+                                <div class="main-txt">
+                                    <h3 class="">Lorem ipsum dolor</h3>
+                                    <p class="">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                        Quia veniam animi dicta ducimus neque consectetur et nisi 
+                                        doloremque iste vero quis ab voluptatem laudantium illum 
+                                        repudiandae minus tempora dolore culpa sit perferendis unde, 
+                                        eveniet repellendus! Distinctio, hic expedita, provident commodi, 
+                                        doloribus possimus aut unde repellat iste velit minima est nobis.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                        Quia veniam animi dicta ducimus neque consectetur et nisi 
+                                        doloremque iste vero quis ab voluptatem laudantium illum 
+                                        repudiandae minus tempora dolore culpa sit perferendis unde, 
+                                        eveniet repellendus! Distinctio, hic expedita, provident commodi, 
+                                        doloribus possimus aut unde repellat iste velit minima est nobis.
+                                    </p>
+                                    <div class="tag">
+                                        <span>#바다</span>
+                                        <span>#섬</span>
+                                        <span>#휴양지</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-pnl">
+                                <div class="main-img">
+                                    <img src="../resources/img/background/bg_main_01.jpg" alt="">
+                                </div>
+                                <div class="main-txt">
+                                    <h3 class="">Lorem ipsum dolor</h3>
+                                    <p class="">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                        Quia veniam animi dicta ducimus neque consectetur et nisi 
+                                        doloremque iste vero quis ab voluptatem laudantium illum 
+                                        repudiandae minus tempora dolore culpa sit perferendis unde, 
+                                        eveniet repellendus! Distinctio, hic expedita, provident commodi, 
+                                        doloribus possimus aut unde repellat iste velit minima est nobis.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                        Quia veniam animi dicta ducimus neque consectetur et nisi 
+                                        doloremque iste vero quis ab voluptatem laudantium illum 
+                                        repudiandae minus tempora dolore culpa sit perferendis unde, 
+                                        eveniet repellendus! Distinctio, hic expedita, provident commodi, 
+                                        doloribus possimus aut unde repellat iste velit minima est nobis.
+                                    </p>
+                                    <div class="tag">
+                                        <span>#바다</span>
+                                        <span>#섬</span>
+                                        <span>#휴양지</span>
+                                    </div>
+                                </div>
+                            </div>
+
                         </section>
-                    </div>
+
+                        <section class="main-wrap type-2">
+                            <div class="main-tit">
+                                <h2>공부방</h2>
+                            </div>
+                        </section>
+                        
+                    </main>
+
                 </div>
-            </main>
+            </div>
 
             <footer class="base-footer"></footer>
         </div>
