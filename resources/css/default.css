@@ -16,13 +16,37 @@
 	--black:#000;
 	--white:#fff;	
 
-	/* --primary: #a6ff4d; */
-	/* --secondary: #03dac6; */
+	--primary: #FFF3E0;
+	--secondary: #FFE0B2;
 	
-	/* --red: #ef5350; */
-	/* --success: #3182f6; */
-	/* --link: #6296df; */
-    --themed : #caff94;
+	--f-sz-s : 1.2rem;
+	--f-sz-m : 1.4rem;
+	--f-sz-l : 1.6rem;
+	--f-sz-xl : 1.8rem;
+	--f-sz-h3 : 2rem;
+	--f-sz-h2 : 2.2rem;
+
+	--mt-x : .4rem;
+	--mt-x2 : .8rem;
+	--mt-x3 : 1.2rem;
+	--mt-x4 : 1.6rem;
+	--mt-x5 : 2rem;
+	--mt-x6 : 2.4rem;
+	--mt-x7 : 2.8rem;
+	--mt-x8 : 3.2rem;
+	--mt-x9 : 3.6rem;
+	--mt-x10 : 4rem;
+
+	--mb-x : .4rem;
+	--mb-x2 : .8rem;
+	--mb-x3 : 1.2rem;
+	--mb-x4 : 1.6rem;
+	--mb-x5 : 2rem;
+	--mb-x6 : 2.4rem;
+	--mb-x7 : 2.8rem;
+	--mb-x8 : 3.2rem;
+	--mb-x9 : 3.6rem;
+	--mb-x10 : 4rem;
 }
 
 :root.dark {
@@ -41,14 +65,10 @@
     --black:#fff;
 	--white:#000;
 
-	/* --primary: #a6ff4d; */
-	/* --secondary: #00a661; */
+	--primary: #FFF3E0;
+	--secondary: #FFE0B2;
 
-	/* --error: #f44336; */
-	/* --success: #3182f6; */
-	/* --link: #6296df; */
 
-    --themed : #85ff0b;
 }
 
 

@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+/* 
+******************** wrap ********************
+******************** wrap ********************
+******************** wrap ********************
+ */
+.body-wrap { background:url(../img/background/bg_wrap_02.jpg)no-repeat center / 100%;}
+.body-wrap .wrap {display:flex; flex-wrap: wrap; flex-direction: row;  min-width:96rem; max-width:128rem; margin:0 auto; border: 1px dashed var(--black);}
+.body-wrap .wrap .header-wrap {order:1; width:100%; position: relative; display:flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap;height:16rem; background:url(../img/background/bg_body.jpg) no-repeat; padding:.8rem 1.6rem 0 1.6rem;}
+.body-wrap .wrap .aside-wrap {width:25%; background:red; order:3;}
+.body-wrap .wrap .main-wrap {width:calc(75% - 4rem); margin-right:4rem; background:skyblue; order:2;}
+.body-wrap .wrap .footer-wrap {width:100%; background:yellow; order:4;}
+
+.dark .body-wrap {}
+.dark .body-wrap .wrap {}
+.dark .body-wrap .wrap .header-wrap {background: url(../img/background/bg_body_dark.jpg) no-repeat;}
+.dark .body-wrap .wrap .aside.wrap {}
+.dark .body-wrap .wrap .main-wrap {}
+.dark .body-wrap .wrap .footer-wrap {}
+
+
+
+
+
+
+ /* 
+******************** header ********************
+******************** header ********************
+******************** header ********************
+ */
+
+.logo-wrap {position:relative; width:50%; width:16rem; height:6rem;}
+.logo-wrap .logo {width:100%; height:100%; background:url(../img/logo.svg)no-repeat center / 100%;}
+.dark .logo-wrap .logo {width:100%; height:100%; background:url(../img/logo_dark.svg)no-repeat center / 100%;}
+
+.search-wrap {display: block; position:relative; width:20rem; margin-right:.8rem;}
+.search-wrap input {width:100%; border:none; border-bottom: 1px solid var(--gray700); background:transparent;}
+.search-wrap .btn-search {content:''; position:absolute; right:.4rem; top:.4rem; width:1.8rem; height:1.8rem; background:url(../img/icons/ico_etc_serarch.png) no-repeat center / 100%; }
+.dark .search-wrap .btn-search {background:url(../img/icons/ico_etc_serarch_dark.png) no-repeat center / 100%; }
+
+.nav-wrap {width:100%; margin-top:1.2rem; border-top: 1px solid var(--black);}
+.nav-wrap .nav-item {text-align: center; border: 1px solid #000;}
+.nav-wrap .nav-item li {display:inline-block;}
+.nav-wrap .nav-item li a {display:block; margin:0 .8rem; font-size:var(--f-sz-xl); font-weight: 500; padding:.8rem 0;}
+
+.header-item {position: absolute; width:100%; top:0; left:0; height:4rem;}
+.clock {width:10rem; margin:0 auto; text-align: center; padding:1rem 0;}
+.clock span {font-size:var(--f-sz-xl); font-weight: 700;}
+.mode .mode-btn{position:absolute; top:50%; right:.8rem; transform:translateY(-50%); width:2.8rem; height:2.8rem; background:url(../img/icons/ico_mode_light.png)no-repeat center / 100%;}
+.dark .mode .mode-btn{background:url(../img/icons/ico_mode_dark.png)no-repeat center / 100%;}
+
+
+
+
+
+
+
+
+
+
+/* 
+******************** aside ********************
+******************** aside ********************
+******************** aside ********************
+ */
+.my-info {display:flex; align-items: center; flex-direction: column; background: #FFF3E0; border-radius: 1.5rem; padding: 3.2rem 0;}
+.my-info .photo {position:relative; width:10rem; height:10rem; background:#fff; border-radius: 50%;}
+.my-info .photo img {position:absolute; left:50%; top:50%; transform: translate(-50%, -50%);}
+.my-info .info {width:75%; margin-top: 2.4rem;}
+.my-info .info > div {display:flex; justify-content: space-between; align-items: center; margin-top: .8rem;}
+.my-info .info > div dt {font-size:1.2rem; font-weight: 500;}
+.my-info .info > div dd {font-size:1.4rem; font-weight: 500;}
+.my-info .sns {display:flex; justify-content: center; align-items: center; margin-top:2.4rem;}
+.my-info .sns li {position:relative; width:2.8rem; height:2.8rem;  margin:0 .8rem;}
+.my-info .sns li a::before {content:''; position:absolute; width:100%; height:100%; background-repeat: no-repeat; background-position: center; background-size: 100%;}
+.my-info .sns li a.instagram::before {background-image: url(../img/icons/ico_sns_instargram.png);}
+.my-info .sns li a.github::before {background-image: url(../img/icons/ico_sns_github.png);}
+.my-info .sns li a.twitter::before {background-image: url(../img/icons/ico_sns_twitter.png);}
+.my-info .sns li a.facebook::before {background-image: url(../img/icons/ico_sns_facebook.png);}
+
+
+
+
+
+
+
+
+
+
+/* 
+******************** main ********************
+******************** main ********************
+******************** main ********************
+ */
+.main-wrap {border: 1px solid #000;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* 
+******************** footer ********************
+******************** footer ********************
+******************** footer ********************
+ */
+.footer-wrap {border: 1px solid #000;}
+
+
+
+
+
+
+
+
+
+
