@@ -5,12 +5,12 @@
 ******************** wrap ********************
 ******************** wrap ********************
  */
-.body-wrap { background:#fc8d84;}
-.body-wrap .wrap {display:flex; flex-wrap: wrap; flex-direction: row;  min-width:96rem; max-width:128rem; margin:0 auto;}
+.body-wrap { background:#ede7f6 ;}
+.body-wrap .wrap {display:flex; flex-wrap: wrap; flex-direction: row;  min-width:96rem; max-width:142rem; margin:0 auto;}
 .body-wrap .wrap .header-wrap {order:1; width:100%; position: relative; display:flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap;height:16rem; background:url(../img/background/bg_body.jpg) no-repeat; padding:.8rem 1.6rem 0 1.6rem; margin-bottom:4rem;}
 .body-wrap .wrap .aside-wrap {width:25%; order:3;}
-.body-wrap .wrap .main-wrap {width:calc(75% - 4rem); margin-right:4rem; background:url(../img/background/bg_body.jpg); order:2;}
-.body-wrap .wrap .footer-wrap {display:flex; justify-content: space-between; align-items: flex-start; flex-direction: row; width:100%; background:url(../img/background/bg_body.jpg); order:4; padding:3.2rem; margin-top:4rem;}
+.body-wrap .wrap .main-wrap {order:2; width:calc(75% - 4rem); background:url(../img/background/bg_body.jpg); margin-right:4rem; padding-bottom: 4rem;}
+.body-wrap .wrap .footer-wrap { order:4;display:flex; justify-content: space-between; align-items: flex-start; flex-direction: row; width:100%; background:url(../img/background/bg_body.jpg); padding:3.2rem; margin-top:4rem;}
 
 .dark .body-wrap {}
 .dark .body-wrap .wrap {}
@@ -29,7 +29,6 @@
 ******************** header ********************
 ******************** header ********************
  */
-
 .logo-wrap {position:relative; width:50%; width:16rem; height:6rem;}
 .logo-wrap .logo {display:block; width:inherit; height:inherit; background:url(../img/logo.svg)no-repeat center / 100%;}
 .dark .logo-wrap .logo {width:100%; height:100%; background:url(../img/logo_dark.svg)no-repeat center / 100%;}
@@ -64,7 +63,6 @@
 ******************** aside ********************
 ******************** aside ********************
  */
-
 
  /* 
  ******************** aside ********************
@@ -125,15 +123,6 @@
 .menu-wrap .menu-item .cont .cont-item > li .dep2 li::before {content:''; position: absolute; left:-1rem; top:1rem; width:.2rem; height:.2rem; background:var(--black); border-radius: 50%; }
 .menu-wrap .menu-item .cont .cont-item > li .dep2 li a {}
 
-/* 
-.menu-wrap .menu-item .cont-item .menu-list.close h3::after {background:url(../img/icons/ico_minus.png)no-repeat center / 100%;}
-.menu-wrap .menu-item .cont-item .menu-list h3 .menu-btn {display:block; width:100%; text-align: left;}
-.menu-wrap .menu-item .cont-item .menu-list h3 .menu-btn span {display:block; padding: .8rem 0 .8rem 1.6rem;}
-
-.menu-wrap .menu-item .cont-item .menu-item.dep2 li {position:relative; padding: .8rem 0 .8rem 2.4rem; background:var(--gray300); border-bottom: 1px solid var(--gray700); font-size:1.4rem; font-weight: 400;}
-.menu-wrap .menu-item .cont-item .menu-item.dep2 li:last-child {border-bottom: 0;}
-.menu-wrap .menu-item .cont-item .menu-item.dep2 li::before {content:'-'; position:absolute; left:1.2rem; top:50%; transform: translateY(-50%);}
-.menu-wrap .menu-item .cont-item .menu-item.dep2 li a {display: block; overflow:hidden; white-space: nowrap; text-overflow:ellipsis; padding-right:3.6rem;} */
 
 
 
@@ -212,11 +201,6 @@
 
 
 
-
-
-
-
-
  /* 
 ******************** footer ********************
 ******************** footer ********************
@@ -227,14 +211,10 @@
  ******************** footer ********************
  ******************** footer-nav ********************
   */
-.logo-wrap.footer {}
-.footer-nav {}
 .footer-nav .footer-nav-item {display:flex;}
 .footer-nav .footer-nav-item >li {margin-right: 4rem;}
 .footer-nav .footer-nav-item >li:last-child {margin:0;}
-.footer-nav .footer-nav-item >li a {}
 .footer-nav .footer-nav-item >li a .tit {display:block; font-size:1.8rem; font-weight: 700; margin:1.6rem 0; text-align: left;}
-.footer-nav .footer-nav-item >li ul {}
 .footer-nav .footer-nav-item >li ul li {margin:.4rem 0 1.2rem 0; }
 .footer-nav .footer-nav-item >li ul li a {display:block; font-size:1.6rem; text-align: left;}
 
@@ -247,11 +227,14 @@
 .contact-wrap {display:flex; flex-direction: column; width:40rem;}
 .contact-wrap .tit {font-size: 2.4rem; margin-bottom: 1.6rem;}
 .contact-wrap input[type=text] {margin-bottom: 1.6rem; border:0; border-bottom: 1px solid var(--black); background:transparent; padding: .8rem;}
-.contact-wrap .name {}
-.contact-wrap .email {}
 .contact-wrap .text {background:transparent; padding: .8rem; font-size:1.2rem; margin-bottom: .8rem;}
 .contact-wrap .btn-wrap {text-align: right;}
 .contact-wrap .sand-btn {display:inline-block; width:8rem; padding:.8rem 0; background:#FFF3E0; border:1px solid #FFE0B2; }
+
+
+
+
+
 
 
 
