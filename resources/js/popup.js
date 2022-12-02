@@ -1,6 +1,3 @@
-document.ready(function(){
-
-
 $modal = $('.modal-wrap');
 
     function closeModal() {
@@ -27,4 +24,3 @@ $modal = $('.modal-wrap');
           closeModal();
         }
     })
-});
