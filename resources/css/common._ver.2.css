@@ -41,7 +41,7 @@
 .nav-wrap {width:100%; margin-top:1.2rem; border-top: 1px solid var(--black); padding:.8rem 0;}
 .nav-wrap .nav-item {text-align: center;}
 .nav-wrap .nav-item li {display:inline-block;}
-.nav-wrap .nav-item li a {display:block; margin:0 .8rem; font-size:var(--f-sz-xl); font-weight: 500; padding:.8rem 0;}
+.nav-wrap .nav-item li a {display:block; margin:0 .8rem; font-size:1.8rem; font-weight: 500; padding:.8rem 0;}
 
 .header-item {position: absolute; width:100%; top:0; left:0; height:4rem;}
 .clock {width:10rem; margin:0 auto; text-align: center; padding:1rem 0;}
@@ -68,7 +68,7 @@
  ******************** aside ********************
  ******************** info ********************
   */
-.my-info {display:flex; align-items: center; flex-direction: column; background: #FFF3E0; border-radius: 1.5rem; padding: 3.2rem 0;}
+.my-info {display:flex; align-items: center; flex-direction: column; background: var(--primary); border-radius: 1.5rem; padding: 3.2rem 0;}
 .my-info .photo {position:relative; width:10rem; height:10rem; background:#fff; border-radius: 50%;}
 .my-info .photo img {position:absolute; left:50%; top:50%; transform: translate(-50%, -50%);}
 .my-info .info {width:75%; margin-top: 2.4rem;}
@@ -87,12 +87,13 @@
 ******************** aside ********************
 ******************** tab ********************
  */
-.tab-wrap {border: 1px solid #FFE0B2; margin-top:2.4rem;}
-.tab-wrap .tab-header {display:flex; justify-content: center;}
-.tab-wrap .tab-header li {width:50%; text-align: center; padding:.4rem 0;background:var(--white);}
-.tab-wrap .tab-header li.act { background:#FFF3E0; font-weight: 600;}
+.tab-wrap {border: 1px solid var(--secondary); margin-top:2.4rem;}
+.tab-wrap .tab-header {display:flex; justify-content: center; color:var(--black);}
+.tab-wrap .tab-header li {width:50%; text-align: center; padding:.4rem 0;background:var(--gray500); }
+/* .tab-wrap .tab-header li span {color:var(--black)} */
+.tab-wrap .tab-header li.act { background:var(--primary); font-weight: 600;}
 
-.tab-wrap .tab-cont .tab-item {background:#FFF3E0; counter-reset: number;}
+.tab-wrap .tab-cont .tab-item {background:var(--primary); counter-reset: number;}
 .tab-wrap .tab-cont .tab-item > li {border-bottom: 2px solid var(--gray300);}
 .tab-wrap .tab-cont .tab-item > li a {display:block; padding: .8rem ;}
 .tab-wrap .tab-cont .tab-item > li {position:relative; padding-left: 6rem;}
@@ -165,13 +166,14 @@
 ******************** main ********************
 ******************** 공부방 ********************
  */
-.ctgy-item >li {position:relative; display:inline-block; margin-right: .8rem; font-size:2rem; font-weight: 400; margin: 1.6rem .8rem 0 0 ;}
+.ctgy-item >li {position:relative; display:inline-block; font-size:2rem; font-weight: 400; margin: 1.6rem .8rem 0 0 ;}
 .ctgy-item >li.act {font-weight: 700;}
 .ctgy-item >li.act::before {content:''; position: absolute; left:0; bottom:-.2rem; width: 100%; height:.1rem; background:var(--black);}
+.ctgy-item >li span {color:var(--black); }
 
 .cont-wrap.study .cont {display:flex; flex-wrap: wrap;}
-.cont-wrap.study .cont .pnl {display:flex; justify-content: flex-start; flex-direction: column; width:calc(25% - 1.6rem); margin:0 .8rem; padding:1.6rem; border: 4px solid #FFE0B2; border-radius:2rem; background:#FFF3E0; margin-top:2.4rem;}
-.cont-wrap.study .cont .pnl .img {position:relative; width:8rem; height:8rem; margin:0 auto; border: 2px solid #FFE0B2; background: #fff; border-radius: 50%;}
+.cont-wrap.study .cont .pnl {display:flex; justify-content: flex-start; flex-direction: column; width:calc(25% - 1.6rem); margin:0 .8rem; padding:1.6rem; border: 4px solid var(--secondary); border-radius:2rem; background:var(--primary); margin-top:2.4rem;}
+.cont-wrap.study .cont .pnl .img {position:relative; width:8rem; height:8rem; margin:0 auto; border: 2px solid var(--secondary); background: #fff; border-radius: 50%;}
 .cont-wrap.study .cont .pnl .img img {position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); width: 50%;}
 .cont-wrap.study .cont .pnl .txt {width:100%; margin-top:1.6rem; padding:.8rem;}
 .cont-wrap.study .cont .pnl .txt h3 {width:100%; font-size:1.8rem; overflow: hidden; white-space: nowrap; text-overflow:ellipsis; padding:.4rem .8rem;}
@@ -180,7 +182,7 @@
 .cont-wrap.study .cont .pnl .tag span {margin-right: .4rem;}
 
 .more-btn-wrap {text-align: center; margin-top:3.2rem;}
-.more-btn-wrap .more-btn {padding:1.2rem 1.6rem; background:#FFF3E0; border-radius:1.5rem; }
+.more-btn-wrap .more-btn {padding:1.2rem 1.6rem; background:var(--primary); border-radius:1.5rem; }
 .more-btn-wrap .more-btn span {font-size:1.8rem; font-weight: 700; color:var(--gray700);}
 
 
@@ -189,10 +191,10 @@
 ******************** 영상 정보 ********************
  */
 .cont-wrap.video .cont {display:flex; justify-content: flex-start; flex-wrap: nowrap; overflow:hidden; margin-top:2.4rem;}
-.cont-wrap.video .cont .pnl {width:28rem; padding:1.6rem; border-radius: 3rem; border: 2px solid #FFE0B2; background:transparent; margin: 0 .8rem;}
-.cont-wrap.video .cont .pnl video {margin:0 auto; width:8rem; height:8rem; border-radius: 50%; border: 1px solid #FFE0B2; background:#fff;}
-.cont-wrap.video .cont .pnl video iframe {border: 1px solid #000;}
-.cont-wrap.video .cont .pnl .tit {flex-direction: column; align-items: flex-start; font-size: 1.4rem; margin-top:1.6rem; text-align: center;  background:#FFF3E0; padding: .8rem 0;}
+.cont-wrap.video .cont .pnl {width:28rem; padding:1.6rem; border-radius: 3rem; border: 2px solid var(--secondary); background:transparent; margin: 0 .8rem;}
+.cont-wrap.video .cont .pnl video {margin:0 auto; width:8rem; height:8rem; border-radius: 50%; border: 1px solid var(--secondary);}
+.cont-wrap.video .cont .pnl video iframe {border: 1px solid var(--black);}
+.cont-wrap.video .cont .pnl .tit {flex-direction: column; align-items: flex-start; font-size: 1.4rem; margin-top:1.6rem; text-align: center;  background:var(--primary); padding: .8rem 0;}
 .cont-wrap.video .cont .pnl .tit h3 {display:block; width:100%; text-align: left; margin-bottom:1.6rem;}
 .cont-wrap.video .cont .pnl .tit strong {display:block;}
 
@@ -229,7 +231,7 @@
 .contact-wrap input[type=text] {margin-bottom: 1.6rem; border:0; border-bottom: 1px solid var(--black); background:transparent; padding: .8rem;}
 .contact-wrap .text {background:transparent; padding: .8rem; font-size:1.2rem; margin-bottom: .8rem;}
 .contact-wrap .btn-wrap {text-align: right;}
-.contact-wrap .sand-btn {display:inline-block; width:8rem; padding:.8rem 0; background:#FFF3E0; border:1px solid #FFE0B2; }
+.contact-wrap .sand-btn {display:inline-block; width:8rem; padding:.8rem 0; background:var(--primary); border:1px solid var(--secondary); }
 
 
 
