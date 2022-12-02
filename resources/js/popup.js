@@ -24,3 +24,11 @@ $modal = $('.modal-wrap');
           closeModal();
         }
     })
+
+
+    var myModal = function() {
+      o.btn = null,
+
+      
+
+    }
